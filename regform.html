@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>AJAX & JSON</title>
+    <link rel="stylesheet" href="regform.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="userform">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <button onclick="fetchPosts()">Load For More Information</button>
+    <table id="dataTable" style="display:none;">
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
+        </tr>
+        <tbody id="postsTable"></tbody>
+      </thead>
+    </table>
+    <script src="regform.js"></script>
+</body>
+</html>
